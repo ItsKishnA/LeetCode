@@ -3,7 +3,7 @@ public:
     int removeElement(vector<int>& nums, int val) {
         int k=0;
         int lastIter = nums.size()-1;
-        int temp=51;
+        
 
         // ORIGNAL
         // for(int j=0; j<nums.size(); j++){
@@ -11,7 +11,7 @@ public:
         // }
         // cout<<endl;
 
-        for(int i=0; i<nums.size(); i++){
+        for(int i=0, temp=0; i<nums.size(); i++){
             // DEBUGGING
             // cout<<"from : ";
             // for(int j=0; j<nums.size(); j++){
