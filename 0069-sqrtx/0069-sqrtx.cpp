@@ -7,15 +7,11 @@ public:
         // For random int handling
         for(long int i=0; i<=(x/2)+1; i++){
             if((i*i)>x){
-                cout<<"THIS";
                 return i-1;
-            }
-            else if((i*i)==x){
-                cout<<"THAT";
+            }else if((i*i)==x){
                 return i;
             }
         }
-        cout<<"BLA";
         return 1;
     }
 };
