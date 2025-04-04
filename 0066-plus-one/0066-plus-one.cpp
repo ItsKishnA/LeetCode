@@ -10,10 +10,10 @@ public:
             }
         }
 
-        if(digits.size()==1 && digits[0]<9){
-            digits[0]++;
-            return digits;
-        }
+        // if(digits.size()==1 && digits[0]<9){
+        //     digits[0]++;
+        //     return digits;
+        // }
 
         if(all9){
             digits.push_back(0);
@@ -21,8 +21,6 @@ public:
             digits[0]=1;
             return digits;
         }
-
-        
 
         // if all not 9
 
@@ -35,9 +33,9 @@ public:
                 digits[i]=0;
                 digits[i-1]++;
             }
-            // else{
-            //     break;
-            // }
+            else
+                break;
+            
         }
 
         
