@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isValid(string s) {
-        vector<char> paren(s.length());
+        vector<char> paren(s.length()/2);
 
         if(s.length()%2 != 0)
             return false;
